@@ -1,0 +1,6 @@
+---
+ - name: copy the conf file itself
+   hosts: localhost
+   tasks:
+    - name: copy the conf file
+      copy: src=/etc/passwd dest=/etc/backup_passwd remote_src=yes
