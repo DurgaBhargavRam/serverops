@@ -1,0 +1,10 @@
+---
+ - name: crating multiple users
+   hosts: bat22
+   tasks:
+     - name: users creating without using same modules multiple times
+       user: name="{{item}}" state=present
+       with_items:
+             - siva
+             - akhil
+             - varaprasad
