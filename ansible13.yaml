@@ -1,0 +1,8 @@
+---
+ - name: creating line in file
+   hosts: bat22
+   tasks:
+     - name: line in file
+       file: dest=/var/www/html/ state=touch
+     - name: line in file
+       lineinfile: dest=/var/www/html/index.html line='varains.com' flat=yes
