@@ -1,0 +1,11 @@
+---
+ - name: showing modules
+   hosts: bat22
+   vars:
+      os: "linux"
+      cloud: "aws"
+      tools: "devops"
+   tasks:
+     - name: this is for debug test
+       debug:
+         msg: "I Love My Profession in {{os}}"
