@@ -1,0 +1,12 @@
+---
+ - name: this is for sir given task
+   hosts: bat22
+   tasks:
+     - name: installed httpd package
+       yum: 'name=httpd state=present'
+
+     - name: service httpd restart
+       service: 'name=httpd state=restarted enabled=yes'
+
+     - name: adding line in file
+       lineinfile: "dest=/var/www/html/index.html line='vara-sys-16-bhargav'"
