@@ -1,0 +1,11 @@
+---
+ - name: service start
+   hosts: bat22
+   tasks:
+     - name: services on
+       service: name="{{item}}" state=restarted
+       with_items:
+         - httpd
+         - vsftpd
+         - smb
+         - ypserv
