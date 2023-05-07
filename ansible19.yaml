@@ -1,0 +1,11 @@
+---
+ - name: multiple files creation
+   hosts: bat22
+   tasks:
+     - name: files creations
+       command: touch /tmp/"{{item}}"
+       with_items:
+             - bhargav1
+             - bhargav2
+             - bhargav3
+             - bhargav4
