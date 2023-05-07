@@ -1,0 +1,12 @@
+---
+ - name: this is for bhargav
+   hosts: bat22
+    var:
+      Os: "linux"
+   Cloud: "aws"
+   Tools: "devops"
+   tasks:
+     - name: message
+            - debug: msg="I Love My Profession in {{Os}}"
+            - debug: msg="I Love My Profession in {{Cloud}}"
+            - debug: msg="I Love My Profession in {{Tools}}"
