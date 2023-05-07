@@ -1,0 +1,9 @@
+---
+ - name: debug&register
+   hosts: bat22
+   tasks:
+     - name: server kernel
+       command: df -h
+       register: bhargav
+     - debug:
+          var: bhargav.stdout
