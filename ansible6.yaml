@@ -1,0 +1,14 @@
+---
+ - name: checking kernel version
+   hosts: bat22
+   tasks:
+    - name: checking ker
+      command: uname -a
+      register: kernel
+    - debug: var=kernel.stdout
+
+    - name: date
+      command: date
+      register: date
+    - debug: var=date.stdout
+      tags: bhargav
