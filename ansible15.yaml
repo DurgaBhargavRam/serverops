@@ -1,0 +1,9 @@
+---
+ - name: install multiple pkgs
+   hosts: bat22
+   tasks:
+     - name: install httpd pkg
+       yum: name=httpd state=present
+
+     - name: install ftp pkg
+       yum: name=ftp state=present
