@@ -1,0 +1,6 @@
+---
+ - name: service starts
+   host: bat22
+   tasks:
+   - name: httpd start
+     service: name=httpd state=started
